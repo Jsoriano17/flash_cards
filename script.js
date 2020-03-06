@@ -4,6 +4,8 @@ const next = document.getElementById('next')
 const deletes = document.getElementById('delete')
 const userInputTitle = document.querySelector('user-input-title')
 const userInputInfo = document.querySelector('user-input-info')
+const userEditTitle = document.querySelector('user-edit-title')
+const userEditInfo = document.querySelector('user-edit-info')
 
 
 let cards = [
@@ -63,3 +65,10 @@ function getInfo() {
     setCardIndex()
   }
 
+  function getInfoEdit() {
+    let userTitle = document.querySelector('.user-edit-title').value
+    let userInfo = document.querySelector('.user-edit-info').value
+    let card = num 
+    cards[card] =  {title: userTitle, info: userInfo}
+    setCardIndex()
+  }
