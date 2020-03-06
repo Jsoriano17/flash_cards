@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Flash Cards</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Oxanium&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Flash Cards</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contacts</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        <img src="img/nasa-jlV2k_Fx0fc-unsplash.jpg" width="100%" class="back-img">
+
+        <div class="card-con">
+            <div class="card text-white bg-secondary border-dark mb-3" style="width: 18rem; height: 520px;">
+                <div class="card-header">Flash Cards</div>
+                <div class="card-body">
+                <ul class="card-title card-ul ">
+                    <li class="card-text">filler</li>
+                    <li class="card-text">filler</li>
+                    <li class="card-text">filler</li>
+                </ul>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="userinput"  placeholder="Create Flash Card">
+                    <div class="input-group-append">
+                      <button class="btn btn-dark" type="button" id="button-addon2" onclick="getInfo()">Save</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="card text-white bg-dark border-secondary card-margin mb-3" style="max-width: 40rem; height: 350px;">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                <h5 class="card-title">Dark card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+        </div>
+        <script src="script.js" async defer></script>
+    </body>
+</html>
+
