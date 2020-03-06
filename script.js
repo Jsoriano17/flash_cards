@@ -16,10 +16,14 @@ let flashHeader = document.getElementById('flash-header')
 let flashInfoHeader = document.getElementById('flash-info-header')
 let flashInfoDesc = document.getElementById('flash-info-desc')
 var num = 0
+function setCardIndex () {
+num = 0
 flashHeader.innerHTML = cards[num].title
 flashInfoHeader.innerHTML = cards[num].title
 flashInfoDesc.innerHTML = cards[num].info
+}
 
+setCardIndex()
 
 //display and hide cards
 
@@ -40,7 +44,7 @@ next.addEventListener('click', (i) => {
     flashInfoHeader.innerHTML = cards[num].title
     flashInfoDesc.innerHTML = cards[num].info
     } else {
-    
+        setCardIndex()
     }
 
 })
@@ -50,5 +54,6 @@ function getInfo() {
     let userInfo = document.querySelector('.user-input-info').value
     let newObj = {title: userTitle, info: userInfo}
     let newCard = cards.push(newObj)
+    setCardIndex()
   }
 
