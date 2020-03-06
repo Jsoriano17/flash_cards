@@ -37,3 +37,11 @@ cards
 .card-ul {
     margin-left: 20px;
 }
+
+#flash-info {
+    display: none;
+}
+
+#flash-title {
+    width: 640px;
+}
